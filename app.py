@@ -22,12 +22,10 @@ if uploaded_files:
     vector_conversion = VectorConvertion(file_paths)
     chat=vector_conversion.vector_conversion()
     st.write(chat)
-    if sid.button('Open Chat'):
-        # Display the chat interface
-        user_input = st.text_input("You:", value="")
-        if st.button("Send"):
-            # Process user input and get response from the chatbot
-            chat_bot = QBot()
-            response = chat_bot.prompt(user_input)
-            st.text_area("Bot:", value=response, height=200)
+    user_input = st.text_input("You:", value="")
+    if st.button("Send"):
+        # Process user input and get response from the chatbot
+        chat_bot = QBot()
+        response = chat_bot.prompt(user_input)
+        st.text_area("Bot:", value=response, height=200)
 

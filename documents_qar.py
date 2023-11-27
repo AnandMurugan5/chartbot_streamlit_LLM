@@ -99,7 +99,7 @@ class VectorConvertion:
 
 class QBot():
     def prompt(self, user_input):
-        persist_directory = "chroma_db"
+        persist_directory = "./chroma_db"
         try:
             llm = AzureChatOpenAI(
                 openai_api_base=OPENAI_API_BASE,
@@ -133,6 +133,7 @@ class QBot():
                 return "The chain is not initialized. Embedding failed."
             else:
                 response = chain.run(user_input)
+                print(response)
                 return response
         except Exception as e:
             st.error(f"QBot error: {str(e)}")
