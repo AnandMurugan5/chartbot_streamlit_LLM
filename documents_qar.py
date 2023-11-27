@@ -137,3 +137,4 @@ class QBot():
         except Exception as e:
             st.error(f"QBot error: {str(e)}")
             return None
+

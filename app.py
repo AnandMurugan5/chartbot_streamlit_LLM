@@ -6,6 +6,7 @@ from documents_qar import VectorConvertion,QBot
 st.title('Chat with your own documents')
 sid = st.sidebar
 
+
 UPLOAD_DIR = "upload"
 if not os.path.exists(UPLOAD_DIR):
     os.makedirs(UPLOAD_DIR)
