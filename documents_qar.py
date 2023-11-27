@@ -92,7 +92,7 @@ class VectorConvertion:
                 documents=docs, embedding=embeddings, persist_directory=persist_directory
             )
             vectordb.persist()
-            return "file upload complited contune for chat"
+            return "File upload has been completed. You can continue with the chat."
         except Exception as e:
             st.error(f"Vector conversion error: {str(e)}")
             return None
