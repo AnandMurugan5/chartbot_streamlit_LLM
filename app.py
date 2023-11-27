@@ -3,7 +3,7 @@ import shutil
 import os
 from documents_qar import VectorConvertion,QBot
 
-st.title('Chat with your own documents')
+st.header('Chat with your own documents')
 sid = st.sidebar
 
 
